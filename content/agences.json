@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "name": "Agence de Dakar",
+      "city": "Dakar",
+      "address": "Adresse à renseigner",
+      "phone": "Téléphone à renseigner",
+      "hours": "Horaires officiels à confirmer",
+      "mapquery": "Dakar, Sénégal",
+      "demo": true
+    },
+    {
+      "name": "Agence de Thiès",
+      "city": "Thiès",
+      "address": "Adresse à renseigner",
+      "phone": "Téléphone à renseigner",
+      "hours": "Horaires officiels à confirmer",
+      "mapquery": "Thiès, Sénégal",
+      "demo": true
+    },
+    {
+      "name": "Agence de Saint-Louis",
+      "city": "Saint-Louis",
+      "address": "Adresse à renseigner",
+      "phone": "Téléphone à renseigner",
+      "hours": "Horaires officiels à confirmer",
+      "mapquery": "Saint-Louis, Sénégal",
+      "demo": true
+    }
+  ],
+  "intro": "Explorez une présentation du futur réseau d’agences. Les emplacements exacts et les horaires restent à renseigner.",
+  "notice": "Carte générale du Sénégal. Les villes ci-dessus sont des exemples de contenu, pas des agences confirmées."
+}

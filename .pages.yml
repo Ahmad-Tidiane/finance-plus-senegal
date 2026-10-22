@@ -1,0 +1,298 @@
+media:
+  input: dist/media
+  output: /finance-plus-senegal/media
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+  - gif
+  rename: safe
+content:
+- name: accueil
+  label: Accueil
+  type: file
+  path: content/accueil.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: Introduction
+    type: string
+    required: true
+  - name: title1
+    label: Titre — ligne 1
+    type: string
+    required: true
+  - name: title2
+    label: Titre — ligne 2
+    type: string
+    required: true
+  - name: title3
+    label: Titre — ligne 3
+    type: string
+    required: true
+  - name: intro
+    label: Texte de présentation
+    type: text
+    required: true
+  - name: proof
+    label: Phrase de confiance
+    type: string
+    required: true
+  - name: image_caption
+    label: Légende de la photo
+    type: string
+    required: true
+  - name: commitment
+    label: Notre engagement
+    type: text
+    required: true
+  - name: cta
+    label: Texte du bloc contact
+    type: string
+    required: true
+- name: apropos
+  label: À propos
+  type: file
+  path: content/apropos.json
+  format: json
+  fields:
+  - name: title
+    label: Titre
+    type: string
+    required: true
+  - name: intro
+    label: Introduction
+    type: text
+    required: true
+  - name: history
+    label: Historique
+    type: text
+    required: true
+  - name: milestones
+    label: Dates clés
+    type: text
+    required: true
+  - name: mission
+    label: Mission
+    type: text
+    required: true
+  - name: vision
+    label: Vision
+    type: text
+    required: true
+  - name: values
+    label: Valeurs
+    type: text
+    required: true
+  - name: governance
+    label: Gouvernance
+    type: text
+    required: true
+  - name: notice
+    label: Mention institutionnelle
+    type: text
+    required: true
+- name: contact
+  label: Contact
+  type: file
+  path: content/contact.json
+  format: json
+  fields:
+  - name: address
+    label: Adresse
+    type: string
+    required: true
+  - name: phone
+    label: Téléphone
+    type: string
+    required: true
+  - name: email
+    label: E-mail
+    type: string
+    required: true
+  - name: hours
+    label: Horaires et informations
+    type: text
+    required: true
+- name: general
+  label: Informations générales
+  type: file
+  path: content/general.json
+  format: json
+  fields:
+  - name: tagline
+    label: Bandeau supérieur
+    type: string
+    required: true
+  - name: footer
+    label: Mention de bas de page
+    type: text
+    required: true
+  - name: copyright
+    label: Copyright
+    type: string
+    required: true
+  - name: description
+    label: Description pour les moteurs de recherche
+    type: text
+    required: true
+- name: images
+  label: Photos du site
+  type: file
+  path: content/images.json
+  fields:
+  - name: hero
+    label: Photo principale
+    type: image
+    required: true
+  - name: team
+    label: Photo de l’équipe
+    type: image
+    required: true
+  - name: business
+    label: Photo entreprise
+    type: image
+    required: true
+  - name: plant
+    label: Photo épargne
+    type: image
+    required: true
+  - name: mobile
+    label: Photo mobile
+    type: image
+    required: true
+- name: produits
+  label: Produits et services
+  type: file
+  path: content/produits.json
+  fields:
+  - name: items
+    label: Catalogue
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Nom
+      type: string
+      required: true
+    - name: category
+      label: Catégorie
+      type: select
+      options:
+        values:
+        - Comptes
+        - Crédits
+        - Digital
+      required: true
+    - name: description
+      label: Description
+      type: text
+      required: true
+  - name: featured
+    label: Produits phares de l’accueil
+    type: object
+    list: true
+    fields:
+    - name: icon
+      label: Symbole
+      type: string
+      required: true
+    - name: title
+      label: Titre
+      type: string
+      required: true
+    - name: description
+      label: Description
+      type: text
+      required: true
+    - name: category
+      label: Catégorie
+      type: string
+      required: true
+- name: agences
+  label: Agences
+  type: file
+  path: content/agences.json
+  fields:
+  - name: notice
+    label: Mention sous la carte
+    type: text
+    required: true
+  - name: intro
+    label: Introduction de la page
+    type: text
+    required: true
+  - name: items
+    label: Agences
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Nom de l’agence
+      type: string
+      required: true
+    - name: city
+      label: Ville
+      type: string
+      required: true
+    - name: address
+      label: Adresse
+      type: text
+      required: true
+    - name: phone
+      label: Téléphone
+      type: string
+      required: true
+    - name: hours
+      label: Horaires
+      type: string
+      required: true
+    - name: mapquery
+      label: Adresse à rechercher sur Google Maps
+      type: string
+      required: true
+    - name: demo
+      label: Agence fictive
+      type: boolean
+- name: actualites
+  label: Actualités
+  type: collection
+  path: content/actualites
+  format: json
+  filename: '{primary}.json'
+  view:
+    primary: title
+    fields:
+    - title
+    - category
+    - published
+  fields:
+  - name: title
+    label: Titre
+    type: string
+    required: true
+  - name: category
+    label: Rubrique
+    type: string
+    required: true
+  - name: image
+    label: Photo
+    type: image
+    required: true
+  - name: body
+    label: Texte de l’article
+    type: text
+    required: true
+  - name: published
+    label: Publier sur le site
+    type: boolean
+    default: false
+  - name: demo
+    label: Article de démonstration
+    type: boolean
+    default: false
+  - name: order
+    label: Ordre d’affichage
+    type: number
+    default: 10

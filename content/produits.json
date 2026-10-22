@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "title": "Compte courant",
+      "category": "Comptes",
+      "description": "Organisez vos opérations courantes et vos dépenses quotidiennes."
+    },
+    {
+      "title": "Compte d’épargne",
+      "category": "Comptes",
+      "description": "Constituez progressivement une réserve pour vos projets."
+    },
+    {
+      "title": "Crédit particulier",
+      "category": "Crédits",
+      "description": "Préparez le financement d’un besoin personnel avec un conseiller."
+    },
+    {
+      "title": "Crédit PME",
+      "category": "Crédits",
+      "description": "Présentez vos besoins de trésorerie, d’équipement ou de développement."
+    },
+    {
+      "title": "Mobile Banking",
+      "category": "Digital",
+      "description": "Découvrez le futur parcours de consultation et de services à distance."
+    },
+    {
+      "title": "Cartes bancaires",
+      "category": "Digital",
+      "description": "Renseignez-vous sur les moyens de paiement proposés par l’institution."
+    }
+  ],
+  "featured": [
+    {
+      "icon": "◉",
+      "title": "Comptes & épargne",
+      "description": "Préparez demain, à votre rythme. Une solution pour vos dépenses courantes et vos projets d’avenir.",
+      "category": "Comptes"
+    },
+    {
+      "icon": "↗",
+      "title": "Crédits & financement",
+      "description": "Un nouveau projet, une activité à développer ? Découvrez un accompagnement adapté à vos ambitions.",
+      "category": "Crédits"
+    },
+    {
+      "icon": "▤",
+      "title": "Solutions digitales",
+      "description": "Gardez votre banque à portée de main et découvrez les services de Mobile Banking et de cartes.",
+      "category": "Digital"
+    }
+  ]
+}
